@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.sp
 import com.example.diceroller.ui.theme.DiceRollerTheme
 
 
- // Main activity for the Dice Roller app.
+// Main activity for the Dice Roller app.
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,9 +44,10 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun DiceRollerApp() {
-    DiceWithButtonAndImage(modifier = Modifier
-        .fillMaxSize()
-        .wrapContentSize(Alignment.Center)
+    DiceWithButtonAndImage(
+        modifier = Modifier
+            .fillMaxSize()
+            .wrapContentSize(Alignment.Center)
     )
 }
 
@@ -59,7 +60,7 @@ val diceImage5 = R.drawable.dice_5
 val diceImage6 = R.drawable.dice_6
 
 
- // A composable function that displays a dice image and a button to roll the dice.
+// A composable function that displays a dice image and a button to roll the dice.
 
 @Composable
 fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
